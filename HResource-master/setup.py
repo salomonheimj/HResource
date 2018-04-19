@@ -15,6 +15,6 @@ setup(
     version='1.0.0',
     description='HResource Web Page',
     long_description=long_description,
-    url='https://github.com/cpenalozag/FastMedicalSolutions',
+    url='https://github.com/salomonheimj/HResource',
     license='Apache-2.0'
 )

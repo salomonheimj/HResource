@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>
+    HREsource
+  </title>
+
+
+  <!-- Bootstrap -->
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Custom Fonts -->
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="static/style.css">
+  <!--Favicon-->
+  <link rel="icon" type="image/png" href="static/fms.png">
+
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+</head>
+
+<body>
+  <div class="row">
+    <div class="col-md-12">
+
+      <!-- Navigation -->
+      <nav class="navbar navbar-default navbar-static-top" role="navigation" style="margin-bottom: 0">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">HResource</span>
+          </button>
+          <a class="navbar-brand">HResource <i class="fa fa-heartbeat fa-1x"></i></a>
+        </div>
+
+        <!-- /.navbar-top-links -->
+        <ul class="nav navbar-top-links navbar-right">
+                <!-- /.dropdown -->
+                <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                        <i class="fa fa-user fa-fw"></i> <i class="fa fa-caret-down"></i>
+                    </a>
+                    <ul class="dropdown-menu dropdown-user">
+                        <li><a href="#"><i class="fa fa-user fa-fw"></i> Perfil</a>
+                        </li>
+                        <li><a href="#"><i class="fa fa-gear fa-fw"></i> Preferencias</a>
+                        </li>
+                        <li class="divider"></li>
+                        <li><a href="login.html"><i class="fa fa-sign-out fa-fw"></i> Cerrar Sesión</a>
+                        </li>
+                    </ul>
+                    <!-- /.dropdown-user -->
+                </li>
+                <!-- /.dropdown -->
+            </ul>
+
+        <div class="navbar-default sidebar" style="padding:0px 0px; width: 350px;" role="navigation">
+          <div class="sidebar-nav navbar-collapse">
+            <div class="row" style="padding:20px 0px;">
+              <div class="col-md-6">
+                <img class="img-responsive pull-right" style="width:130px;height:130px;padding-left:5px" src="static/user.png">
+              </div>
+              <div class="col-md-6 pull-left" style="padding-top:5px;">
+                <h4><strong>Nombre empresa</strong></h4>
+                <h5>Descripcion</h5>
+                <h5>Direccion</h5>
+              </div>
+            </div>
+
+            <ul class="nav" id="side-menu">
+              <li>
+                <a href="{{ url_for('principal') }}"><i class="fa fa-dashboard fa-fw"></i> Perfil</a>
+              </li>
+              <li>
+                <a href="{{ url_for('buscar') }}"><i class="fa fa-user fa-fw"></i> Empleados actuales</a>
+              </li>
+              <li>
+                <a href="{{ url_for('enfermedades') }}"><i class="fa fa-edit fa-fw"></i> Historial de ofertas</a>
+              </li>
+              <li>
+                <a href="{{ url_for('contacto') }}"><i class="fa fa-envelope-open-o fa-fw"></i> Sugerencias</a>
+              </li>
+            </ul>
+          </div>
+          <!-- /.sidebar-collapse -->
+        </div>
+        <!-- /.navbar-static-side -->
+      </nav>
+
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-md-1"></div>
+    <div class="col-md-10">
+      {% with messages = get_flashed_messages() %}
+      {% if messages %}
+      <div class="well well-sm">
+        <ul class=flashes>
+          {% for message in messages %}
+          <li>{{ message }}</li>
+          {% endfor %}
+        </ul>
+      </div>
+      {% endif %}
+      {% endwith %}
+    </div>
+    <div class="col-md-1"></div>
+  </div>
+
+  <div class="row">
+    <div class="col-md-1"></div>
+    <div class="col-md-10">
+      {% block body %}
+
+      {% endblock %}
+    </div>
+    <div class="col-md-1"></div>
+  </div>
+
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <script type="text/javascript" src="http://twitter.github.io/bootstrap/assets/js/bootstrap-transition.js"></script>
+  <script type="text/javascript" src="http://twitter.github.io/bootstrap/assets/js/bootstrap-collapse.js"></script>
+    <!-- jQuery library -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+  <!-- Custom JS -->
+  <script defer src="static/fms.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,5 @@
+---
+applications:
+ - name: FastMedicalSolutions
+   random-route: true
+   memory: 128M

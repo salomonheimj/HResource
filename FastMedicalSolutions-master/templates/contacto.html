@@ -1,0 +1,73 @@
+{% extends "layout.html" %}
+
+{% block body %}
+
+<div id="wrapper">
+
+  <div id="page-wrapper">
+    <div class="row">
+      <div class="col-lg-12">
+        <h1 class="page-header">Contacto</h1>
+        <div class"col-lg-10 col-lg-offset-1">
+          <h4> Escríbanos un mensaje y nos pondrémos en contacto lo más pronto posible. </h4>
+          <br>
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6 col-md-offset-1">
+              <div class="well well-sm">
+                <form class="form-horizontal" >
+                  <fieldset>
+                    <legend class="text-center">Contáctanos</legend>
+
+                    <!-- Name input-->
+                    <div class="form-group">
+                      <label class="col-md-3 control-label" for="name">Nombre</label>
+                      <div class="col-md-9">
+                        <input id="name" name="name" type="text" placeholder="Su nombre" class="form-control">
+                      </div>
+                    </div>
+
+                    <!-- Email input-->
+                    <div class="form-group">
+                      <label class="col-md-3 control-label" for="email">Correo</label>
+                      <div class="col-md-9">
+                        <input id="email" name="email" type="text" placeholder="Su correo" class="form-control">
+                      </div>
+                    </div>
+
+                    <!-- Message body -->
+                    <div class="form-group">
+                      <label class="col-md-3 control-label" for="message">Mensaje</label>
+                      <div class="col-md-9">
+                        <textarea class="form-control" id="message" name="message" placeholder="Ingrese su mensaje aqui..." rows="5"></textarea>
+                      </div>
+                    </div>
+
+                    <!-- Form actions -->
+                    <div>
+                      <div class="col-md-12 text-right">
+                        <a href="{{ url_for('enviar') }}" class="btn btn-default btn-lg">Enviar</a>
+                      </div>
+                    </div>
+                  </fieldset>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <!-- /.col-lg-12 -->
+    </div>
+    <div class="row">
+
+    </div>
+    <!-- /.row -->
+  </div>
+  <!-- /#page-wrapper -->
+
+</div>
+<!-- /#wrapper -->
+
+{% endblock %}

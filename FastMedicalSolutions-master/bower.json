@@ -1,0 +1,16 @@
+{
+  "name": "FastMedicalSolutions",
+  "homepage": "http://startbootstrap.com/template-overviews/sb-admin-2/",
+  "version": "3.3.7+1",
+  "authors": [
+    "Carlos Penaloza",
+    "Camilo Montenegro",
+    "Nicolas Cabrera",
+    "Juan Diego Gonzalez"
+  ],
+  "description": "FMS app",
+  "dependencies": {
+    "bootstrap": "~3.3.7",
+    "font-awesome": "~4.6.3",
+  }
+}

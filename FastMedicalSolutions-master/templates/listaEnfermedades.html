@@ -1,0 +1,67 @@
+
+<html lang="en">
+<head>
+	<title>Historial de ofertas</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+</head>
+
+{% extends "layout.html" %}
+{% block body %}
+<div id="page-wrapper">
+	<div class="row">
+		<div class="col-lg-12">
+			<h1 class="page-header">Enfermedades</h1>
+			<div class="panel panel-default">
+				<ul class="list-group">
+					<li class="list-group-item">Enfermedad isquémica del corazón <span
+						class="label label-danger pull-right">46%</span>
+					</li>
+					<li class="list-group-item">Hipertensión cardiaca <span
+						class="label label-info pull-right">6%</span></li>
+					<li class="list-group-item">Trastorno Inflamatorio del Corazón<span
+						class="label label-info pull-right">2%</span>
+					</li>
+					<li class="list-group-item">Enfermedad cardíaca reumática<span
+						class="label label-info pull-right">1%</span></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</div>
+<div id="wrapper">
+
+
+
+  <div id="page-wrapper">
+    <div class="row">
+      <div class="col-lg-12">
+        <h1 class="page-header">Resultados</h1>
+        <h2>Total resultados: {{entries[0].cantResults}}</h2>
+        {% for resultados in entries %}
+        <dl>
+          <dt>Text tittle: {{resultados.textTittle}}</dt>
+          <dd>Main score: {{resultados.mainScore}}</dd>
+          <dd>Sentiment label: {{resultados.sentLabel}}</dd>
+          <dd>Sentiment score: {{resultados.sentScore}}</dd>
+        </dl>
+        {% else %}
+          <h2>No hay sÃ­ntomas</h2>
+        {% endfor %}
+
+      </div>
+      <!-- /.col-lg-12 -->
+    </div>
+    <div class="row">
+
+    </div>
+    <!-- /.row -->
+  </div>
+  <!-- /#page-wrapper -->
+
+</div>
+<!-- /#wrapper -->
+{% endblock %}
+

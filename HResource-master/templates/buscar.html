@@ -17,7 +17,7 @@
       <div class="col-lg-12">
         <div class="panel panel-default">
           <div class="panel-heading">
-            <i class="fa fa-navicon fa-fw"></i> Búsqueda de Síntomas
+            <i class="fa fa-navicon fa-fw"></i> Información de la oferta
           </div>
           <!-- /.panel-heading -->
 
@@ -25,25 +25,25 @@
             <fieldset>
 
               <div class="panel-body">
-                <h4><i class="fa fa-info-circle fa-fw"></i> Información del paciente</h4>
+                <h4><i class="fa fa-info-circle fa-fw"></i> Perfil</h4>
                 <div class="col-lg-12 well">
                   <div class="row">
                     <div class="col-sm-12">
                       <div class="row">
                         <div class="col-sm-4 form-group">
-                          <label>Edad</label>
+                          <label>Nombre del cargo</label>
                           <input type="number" placeholder="" class="form-control">
                         </div>
                         <div class="col-sm-4 form-group">
-                          <label>Antecedentes Paciente</label>
-                          <select class="form-control" name="antecedentesp">
+                          <label>Requiere titulo universitario</label>
+                          <select class="form-control" name="tipoEmpresa">
                             <option>No</option>
                             <option>Si</option>
                           </select>
                         </div>
                         <div class="col-sm-4 form-group">
-                          <label>Antecedentes Familiares</label>
-                          <select class="form-control" name="antecedentesf">
+                          <label>Requiere experiencia previa</label>
+                          <select class="form-control" name="unipersonal">
                             <option>No</option>
                             <option>Si</option>
                           </select>
@@ -51,90 +51,102 @@
                       </div>
                       <div class="row">
                         <div class="col-sm-4 form-group">
-                          <label>Peso [kg]</label>
-                          <input type="number" name ="peso" class="form-control">
+                          <label>Años de experiencia</label>
+                          <input type="number" name ="aniosExp" class="form-control">
                         </div>
                         <div class="col-sm-4 form-group">
-                          <label>Estatura [cm]</label>
+                          <label>Departamento al que pertence el cargo</label>
                           <input type="number" class="form-control">
                         </div>
                         <div class="col-sm-4 form-group">
-                          <label>IMC</label>
-                          <input type="number" class="form-control">
-                        </div>
-                      </div>
-                      <div class="row">
-                      <div class="col-sm-4 form-group">
-                          <label>Genero</label>
-                          <select class="form-control" name="antecedentesf">
-                            <option>Masculino</option>
-                            <option>Femenino</option>
+                          <label>Titulo necesario para el cargo</label>
+                          <select class="form-control" name="tituloNecesario">
+                            <option>Pregrado</option>
+                            <option>Maestria</option>
+                            <option>Doctorado</option>
+                            <option>N/A</option>
                           </select>
                         </div>
                       </div>
+                      <!--<div class="row">-->
+                      <!--<div class="col-sm-4 form-group">-->
+                          <!--<label>Genero</label>-->
+                          <!--<select class="form-control" name="antecedentesf">-->
+                            <!--<option>Masculino</option>-->
+                            <!--<option>Femenino</option>-->
+                          <!--</select>-->
+                        <!--</div>-->
+                      <!--</div>-->
 
-                      <div class="card mb-5">
-                        <div class="card-header"><h4>Informacion General</h4></div>
-                        <div class="card-block p-0">
-                          <table class="table table-bordered table-sm m-0">
-                            <thead class="">
-                              <tr>
-                                <th></th>
-                                <th>Si</th>
-                                <th>No</th>
-                              </tr>
-                            </thead>
-                            <tbody>
-                              <tr>
-                                <td>¿Toma medicamentos para la hipertensión?</td>
-                                <td>
-                                  <label class="custom-control custom-checkbox">
-                                    <input type="checkbox" class="custom-control-input">
-                                    <span class="custom-control-indicator"></span>
-                                  </label>
-                                </td>
-                                <td>
-                                  <label class="custom-control custom-checkbox">
-                                    <input type="checkbox" class="custom-control-input">
-                                    <span class="custom-control-indicator"></span>
-                                  </label>
-                                </td>
-                              </tr>
-                              <tr>
-                                <td>¿Ha tenido valores de colesterol altos?</td>
-                                <td>
-                                  <label class="custom-control custom-checkbox">
-                                    <input type="checkbox" class="custom-control-input">
-                                    <span class="custom-control-indicator"></span>
-                                  </label>
-                                </td>
-                                <td>
-                                  <label class="custom-control custom-checkbox">
-                                    <input type="checkbox" class="custom-control-input">
-                                    <span class="custom-control-indicator"></span>
-                                  </label>
-                                </td>
-                              </tr>
-                            </tbody>
-                          </table>
-                        </div>
+                      <!--<div class="card mb-5">-->
+                        <!--<div class="card-header"><h4>Informacion General</h4></div>-->
+                        <!--<div class="card-block p-0">-->
+                          <!--<table class="table table-bordered table-sm m-0">-->
+                            <!--<thead class="">-->
+                              <!--<tr>-->
+                                <!--<th></th>-->
+                                <!--<th>Si</th>-->
+                                <!--<th>No</th>-->
+                              <!--</tr>-->
+                            <!--</thead>-->
+                            <!--<tbody>-->
+                              <!--<tr>-->
+                                <!--<td>¿Toma medicamentos para la hipertensión?</td>-->
+                                <!--<td>-->
+                                  <!--<label class="custom-control custom-checkbox">-->
+                                    <!--<input type="checkbox" class="custom-control-input">-->
+                                    <!--<span class="custom-control-indicator"></span>-->
+                                  <!--</label>-->
+                                <!--</td>-->
+                                <!--<td>-->
+                                  <!--<label class="custom-control custom-checkbox">-->
+                                    <!--<input type="checkbox" class="custom-control-input">-->
+                                    <!--<span class="custom-control-indicator"></span>-->
+                                  <!--</label>-->
+                                <!--</td>-->
+                              <!--</tr>-->
+                              <!--<tr>-->
+                                <!--<td>¿Ha tenido valores de colesterol altos?</td>-->
+                                <!--<td>-->
+                                  <!--<label class="custom-control custom-checkbox">-->
+                                    <!--<input type="checkbox" class="custom-control-input">-->
+                                    <!--<span class="custom-control-indicator"></span>-->
+                                  <!--</label>-->
+                                <!--</td>-->
+                                <!--<td>-->
+                                  <!--<label class="custom-control custom-checkbox">-->
+                                    <!--<input type="checkbox" class="custom-control-input">-->
+                                    <!--<span class="custom-control-indicator"></span>-->
+                                  <!--</label>-->
+                                <!--</td>-->
+                              <!--</tr>-->
+                            <!--</tbody>-->
+                          <!--</table>-->
+                        <!--</div>-->
 
-                      </div>
+                      <!--</div>-->
 
                     </div>
                   </div>
 
                   <div class="col-lg-12 well">
-                    <h4><i class="fa fa-user fa-fw"></i> Informacion Adicional Paciente</h4>
+                    <h4><i class="fa fa-user fa-fw"></i> Informacion Adicional</h4>
                     <div id="tags" class="input-group custom-search-form">
                       <input style="width: 620px;" type="text" class="form-control" name="info" placeholder="Datos adicionales relevantes">
                     </div>
                   </div>
 
                   <div class="col-lg-12 well">
-                    <h4><i class="fa fa-stethoscope fa-fw"></i> Síntomas del paciente</h4>
+                    <h4><i class="fa fa-bars fa-fw"></i> Mision</h4>
                     <div id="tags" class="input-group custom-search-form">
-                      <input style="width: 620px;" type="text" class="form-control" name="sintomas" placeholder="Ingrese los síntomas separados por comas">
+                      <input style="width: 620px;" type="text" class="form-control" name="sintomas" placeholder="Ingrese la mision de la empresa">
+                    </div>
+                  </div>
+
+                   <div class="col-lg-12 well">
+                    <h4><i class="fa fa-bars fa-fw"></i> Vision</h4>
+                    <div id="tags" class="input-group custom-search-form">
+                      <input style="width: 620px;" type="text" class="form-control" name="sintomas" placeholder="Ingrese la vision de la empresa">
                     </div>
                   </div>
 

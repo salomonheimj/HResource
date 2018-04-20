@@ -48,9 +48,9 @@ def principal():
 def buscar():
     return render_template('buscar.html')
 
-@app.route('/enfermedades')
-def enfermedades():
-    return render_template('enfermedades.html')
+@app.route('/historialOfertas')
+def historialOfertas():
+    return render_template('HistorialOfertas.html')
 
 @app.route('/informacion')
 def informacion():
@@ -74,13 +74,13 @@ def resultados_busqueda():
     lista_sintomas = request.form['sintomas']
     sintomas = lista_sintomas.split(',')
     resultados = cb_get_results(sintomas)
-    peso = request.form['peso']
+    aniosExp = request.form['aniosExp']
     nombre = ''
-    if peso == '89':
+    if aniosExp == '0':
         nombre = 'listaEnfermedades2.html'
-    elif peso == '80':
+    elif aniosExp == '1':
         nombre = 'listaEnfermedades.html'
-    elif peso == '86':
+    elif aniosExp == '2':
         nombre = 'listaEnfermedades3.html'
     else:
         nombre = 'listaEnfermedades.html'

@@ -77,13 +77,13 @@ def resultados_busqueda():
     aniosExp = request.form['aniosExp']
     nombre = ''
     if aniosExp == '0':
-        nombre = 'listaEnfermedades2.html'
+        nombre = 'listaEmpleado2.html'
     elif aniosExp == '1':
-        nombre = 'listaEnfermedades.html'
+        nombre = 'listaEmpleado1.html'
     elif aniosExp == '2':
-        nombre = 'listaEnfermedades3.html'
+        nombre = 'listaEmpleado3.html'
     else:
-        nombre = 'listaEnfermedades.html'
+        nombre = 'listaEmpleado1.html'
     return render_template(nombre, entries=resultados)
 
 

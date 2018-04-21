@@ -71,9 +71,9 @@ def enviar():
 
 @app.route('/resultados', methods=['POST'])
 def resultados_busqueda():
-    lista_sintomas = request.form['sintomas']
-    sintomas = lista_sintomas.split(',')
-    resultados = cb_get_results(sintomas)
+    lista_empleados = request.form['empleados']
+    empleados = lista_empleados.split(',')
+    resultados = cb_get_results(empleados)
     aniosExp = request.form['aniosExp']
     nombre = ''
     if aniosExp == '0':

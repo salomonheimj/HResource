@@ -1,5 +1,5 @@
 ---
 applications:
- - name: FastMedicalSolutions
+ - name: HResource
    random-route: true
    memory: 128M

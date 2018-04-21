@@ -1,4 +1,4 @@
-# [Fast Medical Solutions](http://fastmedicalsolutions-imperative-manslayer.mybluemix.net/)
+# [Fast Medical Solutions](http://hresource-imperative-manslayer.mybluemix.net/)
 
 ## Run the app locally
 ```
@@ -23,7 +23,7 @@ Login to your Bluemix account
   ```
 cf login
   ```
-From within the FastMedicalSolutions directory push your app to Bluemix
+From within the HResource directory push your app to Bluemix
   ```
 cf push
   ```
@@ -38,4 +38,4 @@ command to view your apps status and see the URL.
 
 ```
 
-View the app at http://fastmedicalsolutions-imperative-manslayer.mybluemix.net/
+View the app at http://hresource-imperative-manslayer.mybluemix.net/

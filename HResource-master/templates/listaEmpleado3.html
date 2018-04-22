@@ -36,32 +36,6 @@
 </div>
 <div id="wrapper">
 
-
-
-  <div id="page-wrapper">
-    <div class="row">
-      <div class="col-lg-12">
-        <h1 class="page-header">Resultados</h1>
-        <h2>Total resultados: {{entries[0].cantResults}}</h2>
-        {% for resultados in entries %}
-        <dl>
-          <dt>Text tittle: {{resultados.textTittle}}</dt>
-          <dd>Main score: {{resultados.mainScore}}</dd>
-          <dd>Sentiment label: {{resultados.sentLabel}}</dd>
-          <dd>Sentiment score: {{resultados.sentScore}}</dd>
-        </dl>
-        {% else %}
-          <h2>No hay sÃ­ntomas</h2>
-        {% endfor %}
-
-      </div>
-      <!-- /.col-lg-12 -->
-    </div>
-    <div class="row">
-
-    </div>
-    <!-- /.row -->
-  </div>
   <!-- /#page-wrapper -->
 
 </div>

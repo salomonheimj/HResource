@@ -44,9 +44,9 @@ port = int(os.getenv('PORT', 8000))
 def principal():
     return render_template('index.html')
 
-@app.route('/buscar')
+@app.route('/crearOferta')
 def buscar():
-    return render_template('buscar.html')
+    return render_template('crearOferta.html')
 
 @app.route('/historialOfertas')
 def historialOfertas():
@@ -71,9 +71,6 @@ def enviar():
 
 @app.route('/resultados', methods=['POST'])
 def resultados_busqueda():
-    lista_empleados = request.form['empleados']
-    empleados = lista_empleados.split(',')
-    resultados = cb_get_results(empleados)
     aniosExp = request.form['aniosExp']
     nombre = ''
     if aniosExp == '0':
@@ -84,7 +81,7 @@ def resultados_busqueda():
         nombre = 'listaEmpleado3.html'
     else:
         nombre = 'listaEmpleado1.html'
-    return render_template(nombre, entries=resultados)
+    return render_template(nombre)
 
 
 # /* Endpoint to greet and add a new visitor to database.

@@ -1,4 +1,4 @@
-# [Fast Medical Solutions](http://hresource-imperative-manslayer.mybluemix.net/)
+# [HResource](http://hresource-imperative-manslayer.mybluemix.net/)
 
 ## Run the app locally
 ```
